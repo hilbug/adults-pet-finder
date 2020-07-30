@@ -1,0 +1,13 @@
+/* placeholder Font */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* title stylings */
+nav {
+    font-weight: 600;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+    height: 75px;
+  }
