@@ -1,6 +1,19 @@
+/* nav stylings */
+nav {
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0rem;
+  height: 75px;
+}
+
 /* placeholder Font */
 body {
   font-family: "Quicksand", sans-serif;
+}
+
+/* intro body */
+body.intro {
   background-color: #e57373;
 }
 
