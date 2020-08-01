@@ -68,6 +68,15 @@ a.yes {
   margin-right: 1.5rem;
 }
 
+/* to hide result */
+#result {
+  order: 2;
+}
+/* to hide search */
+#searchContainer {
+  order: 1;
+}
+
 @media (max-width: 600px) {
   nav {
     height: 100px;
