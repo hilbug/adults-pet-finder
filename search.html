@@ -10,22 +10,38 @@
     <!--Import materialize.css-->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Local Style Sheet -->
+    <link rel="local stylesheet" href="assets/style.css">
 
     <!-- page name-->
     <title>Adults Only Pet Search</title>
 </head>
 
 <body>
-    <!-- Navbar w/ logo -->
+    <!-- Navbar left side logo
+        side side link to search, research, petfinder
+        drop down menu of links in mobile-->
     <nav>
-        <div class="nav-wrapper col s12">
-            <a href="#" class="brand-logo center">Adults Only Petfinder</a>
+        <div class="nav-wrapper">
+            <a href="./intro.html" class="brand-logo">Adults Only Petfinder</a>
+            <a href="#" data-activates="mobile-links" class="sidenav-trigger">
+                <i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./search.html">Search</a></li>
+                <li><a href="./under18.html">Education</a></li>
+                <li><a href="https://www.petfinder.com/">Petfinder</a></li>
+            </ul>
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="./search.html">Search</a></li>
+                <li><a href="./under18.html">Education</a></li>
+                <li><a href="https://www.petfinder.com/">Petfinder</a></li>
+            </ul>
         </div>
     </nav>
     <!-- search container -->
     <div class="container">
         <div class="row">
-            <div class="col s12 m8 offset-m3">
+            <div class="col s12 m8 offset-m2">
                 <div class="card">
                     <div class="card-content">
                         <h3 class="header">Search for a pet</h3>
@@ -104,6 +120,46 @@
                 <!-- end container col -->
             </div>
             <!-- end container row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!-- Results -->
+    <div class="container">
+        <div class="card-panel hoverable">
+            <div class="row">
+                <div class="col s12 m7 l10 offset-m3">
+                    <h3 class="header">Pet Result</h3>
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="https://lorempixel.com/250/250/nature/6">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <h5 id="name black">Name:</h5>
+                                <span class="left-align" id="breed"
+                                    style="padding-right: 15px; font-size: 18px; font-weight:600;">breed:</span>
+                                <span class="center-align" id="sex"
+                                    style="padding-right: 15px; font-size: 18px; font-weight:600;">Sex:</span>
+                                <span class="right-align" id="houseTrained"
+                                    style="padding-right: 15px; font-size: 18px; font-weight:600;">House Trained:</span>
+                                <!-- comedic characteristic based on users mood-->
+                                <h3 id="mood">Pet's characteristics:</h3>
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                            <!-- link to petfinder -->
+                            <div class="card-action">
+                                <a href="https://www.petfinder.com/">Meet Me!</a>
+                            </div>
+                            <!-- end card stacked -->
+                        </div>
+                        <!-- end card horizontal -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end card panel hoverable -->
         </div>
         <!-- end container -->
     </div>
