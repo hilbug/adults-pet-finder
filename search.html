@@ -47,7 +47,7 @@
                 <div class="card hoverable">
                     <div class="card-content">
                         <h3 class="header">Search for a pet</h3>
-                        <form>
+                        <form class="search-form">
                             <!-- users mood -->
                             <div class="row">
                                 <div class="input-field col s12">What is Your Mood?
@@ -98,20 +98,22 @@
                                     <select id="breed">
                                         <option value="" disabled selected>Preference</option>
                                         <!-- cat -->
-                                        <option value="1">Small</option>
+                                        <option value="cat">Small</option>
                                         <!-- fox -->
-                                        <option value="2">Medium</option>
+                                        <option value="fox">Medium</option>
                                         <!-- dog -->
-                                        <option value="3">Large</option>
+                                        <option value="dog">Large</option>
                                         <!-- goat: according to google Adult Goat Height: 16 – 23 in. (Adult, At Shoulder)-->
-                                        <option value="4">16 – 23 in.</option>
+                                        <option value="goat">16 – 23 in.</option>
                                         <!-- end pet size input -->
+                                    </select>
                                 </div>
                                 <!-- end breed row -->
                             </div>
                             <!-- submit button -->
-                            <div class="card-action">
-                                <input type="submit" class="btn" value="Search">
+                            <div class="row">
+                                <button class="btn searchBtn" type="button" name="action">Search
+                                </button>
                             </div>
                             <!-- end input form -->
                         </form>
@@ -132,7 +134,6 @@
             <div class="row">
                 <div class="col s12 m7 l10 offset-m3">
                     <h3 class="header">Pet Result</h3>
-                    <!-- <div class="card horizontal"> -->
                     <div class="card">
                         <div class="card-image">
                             <img id = "pet-image" src="">
