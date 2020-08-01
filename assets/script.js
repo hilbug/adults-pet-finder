@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function () {
   $(".dropdown-trigger").dropdown();
   $("select").formSelect();
@@ -10,5 +9,3 @@ $(document).ready(function () {
 
 
   });
-// Test
->>>>>>> 3a7a8cf65a22161eb1b8f87c6076c2695cd9c442
