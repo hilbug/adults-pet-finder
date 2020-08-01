@@ -11,7 +11,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Local Style Sheet -->
-    <link rel="local stylesheet" href="assets/style.css">
+    <link rel="local stylesheet" href="./assets/style.css">
 
     <!-- page name-->
     <title>Adults Only Pet Search</title>
@@ -39,10 +39,10 @@
         </div>
     </nav>
     <!-- search container -->
-    <div class="container">
+    <div class="container" id="searchContainer">
         <div class="row">
             <div class="col s12 m8 offset-m2">
-                <div class="card">
+                <div class="card hoverable">
                     <div class="card-content">
                         <h3 class="header">Search for a pet</h3>
                         <form>
@@ -125,12 +125,13 @@
     </div>
 
     <!-- Results -->
-    <div class="container">
+    <div class="container" id="result">
         <div class="card-panel hoverable">
             <div class="row">
                 <div class="col s12 m7 l10 offset-m3">
                     <h3 class="header">Pet Result</h3>
-                    <div class="card horizontal">
+                    <!-- <div class="card horizontal"> -->
+                    <div class="card">
                         <div class="card-image">
                             <img src="https://lorempixel.com/250/250/nature/6">
                         </div>
@@ -144,8 +145,8 @@
                                 <span class="right-align" id="houseTrained"
                                     style="padding-right: 15px; font-size: 18px; font-weight:600;">House Trained:</span>
                                 <!-- comedic characteristic based on users mood-->
-                                <h3 id="mood">Pet's characteristics:</h3>
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                <h5 id="mood">Pet's characteristics:</h5>
+                                <p>This is where comedic pet characteristics based on the user's mood.</p>
                             </div>
                             <!-- link to petfinder -->
                             <div class="card-action">
