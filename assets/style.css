@@ -1,13 +1,89 @@
+/* nav stylings */
+nav {
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0rem;
+  height: 75px;
+}
+
 /* placeholder Font */
 body {
   font-family: "Quicksand", sans-serif;
 }
 
+/* intro body */
+body.intro {
+  background-color: #e57373;
+}
+
 /* title stylings */
-nav {
-    font-weight: 600;
-    line-height: 2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0rem;
-    height: 75px;
+div.container-title {
+  text-align: center;
+}
+
+h1,
+h4 {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+/* flexing */
+div.container-age {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+/* card formatting */
+div.cardcontent-age,
+div.cardcontent-animal {
+  text-align: center;
+  width: 300px;
+}
+
+div.cardcontent-animal {
+  order: 2;
+}
+
+div.cardcontent-age {
+  order: 1;
+}
+
+
+h5 {
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+/* buttons stylings */
+a.yes,
+a.no {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: large;
+}
+
+a.yes {
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: 100px;
   }
+  /* div.container-age {
+    flex-direction: column;
+  } */
+  div.card-age,
+  div.card-animal {
+    margin-right: 0rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  div.container-age {
+    flex-wrap: wrap;
+  }
+}
