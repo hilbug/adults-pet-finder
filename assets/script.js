@@ -1,4 +1,6 @@
-$(function () {
+$(document).ready(function () {
+  $(".dropdown-trigger").dropdown();
+  $("select").formSelect();
 
     // input questions and options on search page
     $('select').attr("class", "browser-default");
@@ -7,4 +9,3 @@ $(function () {
 
 
   });
-// Test
