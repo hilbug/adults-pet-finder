@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Local Style Sheet -->
@@ -46,7 +48,7 @@
                 <div class="card hoverable">
                     <div class="card-content">
                         <h3 class="header">Search for a pet</h3>
-                        <form>
+                        <form class="search-form">
                             <!-- users mood -->
                             <div class="row">
                                 <div class="input-field col s12">What is Your Mood?
@@ -110,8 +112,9 @@
                                 <!-- end breed row -->
                             </div>
                             <!-- submit button -->
-                            <div class="card-action">
-                                <input type="submit" class="btn" value="Search">
+                            <div class="row">
+                                <button class="btn searchBtn" type="button" name="action">Search
+                                </button>
                             </div>
                             <!-- end input form -->
                         </form>
