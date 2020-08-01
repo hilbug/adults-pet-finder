@@ -68,6 +68,20 @@ a.yes {
   margin-right: 1.5rem;
 }
 
+/* pet result name: */
+.nameDisplay {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* pet result: */
+.resultDisplay {
+  display: table;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* to hide result */
 #result {
   order: 2;
