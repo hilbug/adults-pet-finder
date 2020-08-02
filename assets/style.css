@@ -82,14 +82,16 @@ a.yes {
   font-size: 20px;
 }
 
+/* to hide search */
+#searchcontainer {
+  display: block;
+}
+
 /* to hide result */
 #result {
-  order: 2;
+  display: block;
 }
-/* to hide search */
-#searchContainer {
-  order: 1;
-}
+
 /* pet image size */
 #pet-image {
   max-width: 500px;
