@@ -5,27 +5,89 @@ nav {
   padding-top: 1.25rem;
   margin-bottom: 0rem;
   height: 75px;
+  background-color: #ff1177;
 }
 
-/* placeholder Font */
+a.brand-logo {
+  font-weight: 200;
+  font-family: "Yellowtail", cursive;
+}
+
+/* results page nav */
+a.results {
+  padding-left: 3rem;
+}
+
+/* Neon Stylings / (https://codepen.io/FelixRilling/pen/qzfoc) */
 body {
   font-family: "Quicksand", sans-serif;
+  background-color: #222222;
+  background: repeating-linear-gradient(
+      45deg,
+      #2b2b2b 0%,
+      #2b2b2b 10%,
+      #222222 0%,
+      #222222 50%
+    )
+    0 / 15px 15px;
 }
 
-/* intro body */
-body.intro {
-  background-color: #e57373;
+#container {
+  width: 500px;
+  margin: auto;
 }
 
-/* title stylings */
-div.container-title {
+p.title,
+p.welcome {
   text-align: center;
+  font-size: 7em;
+  margin: 0;
 }
 
-h1,
-h4 {
+p.welcome {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+a,
+.btn,
+nav {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p:nth-child(2) a,
+p:nth-child(1) a {
+  color: #fff;
+  font-family: "Yellowtail", cursive;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(2) a {
+  font-family: "Monoton", cursive;
+}
+
+p:nth-child(2) a:hover,
+p:nth-child(1) a:hover {
+  color: #ff1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+p a:hover {
+  color: #ffffff;
+}
+
+/* intro subtitle */
+h5.subtitle {
   color: whitesmoke;
   font-weight: 600;
+  text-align: center;
 }
 
 /* flexing */
@@ -35,7 +97,7 @@ div.container-age {
   flex-wrap: nowrap;
 }
 
-/* card formatting */
+/* intro card formatting */
 div.cardcontent-age,
 div.cardcontent-animal {
   text-align: center;
@@ -50,26 +112,84 @@ div.cardcontent-age {
   order: 1;
 }
 
-
-h5 {
+h5,
+div.input-field {
+  color: #222222;
   font-weight: 600;
   padding-bottom: 1.5rem;
 }
 
-/* buttons stylings */
-a.yes,
-a.no {
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-size: large;
+/* Search Title */
+h3.header {
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: center;
 }
 
-a.yes {
+/* Results Card */
+h3.header {
+  text-align: center;
+}
+
+/* Underage Stylings */
+div.underage {
+  text-align: center;
+}
+
+h4.header {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0em;
+  margin-bottom: 2rem;
+}
+
+/* embedded video stylings /courtesy of/ https://embedresponsively.com/ */
+div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.underage-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* button stylings */
+.btn {
+  font-weight: 600;
+  font-size: large;
+  background-color: #ff1177;
+}
+
+a.age-yes,
+a.animal-yes {
   margin-right: 1.5rem;
 }
 
+input.btn {
+  margin-top: 2rem;
+}
+
+.btn-large {
+  width: fit-content;
+  background-color: #ff1177;
+  margin-top: 2rem;
+}
+  
 /* pet result name: */
-.nameDisplay {
+#name {
   font-size: 30px;
   line-height: 40px;
 }
@@ -97,6 +217,7 @@ a.yes {
   max-width: 500px;
 }
 
+/* responsive stylings */
 @media (max-width: 600px) {
   nav {
     height: 100px;
@@ -109,7 +230,25 @@ a.yes {
 }
 
 @media (max-width: 1000px) {
+  p.welcome {
+    font-size: 2rem;
+  }
+  p.title {
+    font-size: 5rem;
+  }
   div.container-age {
     flex-wrap: wrap;
+  }
+}
+
+/*glow for webkit*/
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
