@@ -186,6 +186,19 @@ input.btn {
   width: fit-content;
   background-color: #ff1177;
   margin-top: 2rem;
+  
+/* pet result name: */
+.nameDisplay {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* pet result: */
+.resultDisplay {
+  display: table;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* to hide result */
@@ -201,12 +214,6 @@ input.btn {
 @media (max-width: 600px) {
   nav {
     height: 100px;
-  }
-  p.welcome {
-    font-size: 2rem;
-  }
-  p.title {
-    font-size: 1rem;
   }
   div.card-age,
   div.card-animal {

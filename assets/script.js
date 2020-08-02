@@ -1,9 +1,8 @@
 $(document).ready(function () {
-
   // input questions and options on search page
-  $('select').attr("class", "browser-default");
+  $("select").attr("class", "browser-default");
   // mobile collapse nav bar on result page
-  // $('.sidenav').sidenav();
+  $('.sidenav').sidenav();
 
   // hide result page
   // $('#result').css('display', 'none');
@@ -20,66 +19,61 @@ $(document).ready(function () {
   const petImage = $("#pet-image");
 
   // API call to get dog picture
-  let dogQueryURL = "https://dog.ceo/api/breeds/image/random";
-  let catQueryURL = "";
 
-  let dogPicURL = "";
+  // let dogPicURL = "";
   function dogPicture() {
     $.ajax({
-      url: dogQueryURL,
-      method: "GET"
-    })
-      .then(function (response) {
-        console.log(dogQueryURL);
-        console.log(response)
-        dogPicURL = response.message;
-        petImage.attr("src", dogPicURL);
-      });
+      url: "https://dog.ceo/api/breeds/image/random",
+      method: "GET",
+    }).then(function (response) {
+      console.log(response);
+      petImage.attr("src", response.message);
+    });
   }
 
   // API call to get cat picture
-  let catPicUrl = "";
   function catPicture() {
     $.ajax({
       url: "https://api.thecatapi.com/v1/images/search",
-      method: "GET"
-    })
-      .then(function (response) {
-        console.log(response);
-        //response is an array - need to grab the URL value
-        console.log(response[0].url);
-        catPicUrl = response[0].url;
-      });
+      method: "GET",
+    }).then(function (response) {
+      console.log(response);
+      //response is an array - need to grab the URL value
+      console.log(response[0].url);
+      petImage.attr("src", response[0].url);
+    });
   }
-  
+
   // function to populate the picture based on breed selection
   function setPicture() {
+    console.log(breedDropdown.val());
     //let petImg = $(".card-image").children[0];
 
-    if (breedDropdown.val(1)) {
+    if (breedDropdown.val() === "cat") {
       catPicture();
-      petImage.attr("src", catPicUrl);
     }
 
     // else if (breedDropdown.val() === 2) {
     //   // // Fox
     // }
-
-    else if (breedDropdown.val(3)) {
+    else if (breedDropdown.val() === "dog") {
       dogPicture();
     }
 
     // else if (breedDropdown.val() === 4) {
     //   // // Goat
-    // } 
+    // }
     console.log("set picture ran");
-    console.log("dogurl in setpicture: " + dogPicURL);
   }
 
   // listen for search click to populate the picture?
-  $(".btn").on("click", function(event) {
+  $(".btn").on("click", function (event) {
     event.preventDefault();
     setPicture();
     console.log(event);
+  });
+
+  $("form.search-form").on("submit", function (event) {
+    event.preventDefault();
   });
 });
