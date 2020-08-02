@@ -46,24 +46,22 @@ $(document).ready(function () {
   function setPicture() {
     //let petImg = $(".card-image").children[0];
 
-    if (breedDropdown.val(1)) {
+    if (breedDropdown.val() === "1") {
       catPicture();
       petImage.attr("src", catPicUrl);
     }
 
-    // else if (breedDropdown.val() === 2) {
+    // else if (breedDropdown.val() === "2") {
     //   // // Fox
     // }
 
-    else if (breedDropdown.val(3)) {
+    else if (breedDropdown.val() === "3") {
       dogPicture();
     }
 
-    // else if (breedDropdown.val() === 4) {
+    // else if (breedDropdown.val()) === "4") {
     //   // // Goat
     // } 
-    console.log("set picture ran");
-    console.log("dogurl in setpicture: " + dogPicURL);
   }
 
   // listen for search click to populate the picture?
