@@ -186,9 +186,10 @@ input.btn {
   width: fit-content;
   background-color: #ff1177;
   margin-top: 2rem;
+}
   
 /* pet result name: */
-.nameDisplay {
+#name {
   font-size: 30px;
   line-height: 40px;
 }
