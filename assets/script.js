@@ -32,22 +32,15 @@ $(document).ready(function () {
       petImage.attr("src", response.message);
     });
   }
-  // API call to get the goat picture
-  function goatPicture() {
-    $.ajax({
-      url: "http://placegoat.com",
-      method: "GET",
-    }).then(function (response) {
-      petImage.attr("src", response.message);
-    });
-  }
+
   // API call to get the fox picture
-  function goatPicture() {
-    $.ajax({
-      url: "https://randomfox.ca/?i=69",
-      method: "GET",
-    }).then(function (response) {
-      petImage.attr("src", response.message);
+  function foxPicture() {
+    var src;
+    var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ea61f3692f37cf92a8df83f3df1d9d9d&tags=vulpes+vulpes&safe_search=1&per_page=200";
+    $.getJSON(url + "&format=json&jsoncallback=?", function (data) {
+      let item = data.photos.photo[Math.floor(Math.random() * Object.keys(data.photos.photo).length)];
+      src = "http://farm" + item.farm + ".static.flickr.com/" + item.server + "/" + item.id + "_" + item.secret + "_m.jpg";
+      petImage.attr("src", src);
     });
   }
 
@@ -71,17 +64,17 @@ $(document).ready(function () {
       catPicture();
     }
 
-    // else if (breedDropdown.val() === "fox") {
-    //   // // Fox
-    // }
+    else if (breedDropdown.val() === "fox") {
+      foxPicture();
+    }
 
     else if (breedDropdown.val() === "dog") {
       dogPicture();
     }
 
-    // else if (breedDropdown.val()) === "goat") {
-    //   // // Goat
-    // }
+    else if (breedDropdown.val() === "goat") {
+      petImage.attr("src", "https://placegoat.com/200");
+    }
   }
 
   // Function to generate pet details
@@ -121,19 +114,6 @@ $(document).ready(function () {
     houseTrain.text(houseTrainedOption.substr(0, 1).toUpperCase() + houseTrainedOption.substr(1));
     // Map to likes to #mood-text - upper case first letter
     petLikes.text(randomLike.substr(0, 1).toUpperCase() + randomLike.substr(1));
-
-
-    // Console logs because it's not mapping to the page...
-    console.log("random name");
-    console.log(`${randomFirstName} ${randomLastName}, ${sexOption}`);
-    console.log($("#name"));
-    console.log("breed");
-    console.log(breedDropdown.val());
-    console.log("house trained");
-    console.log(houseTrainedOption);
-    console.log("random like");
-    console.log(randomLike);
-    console.log($("#mood"));
   }
 
   // listen for search click to populate the picture?
