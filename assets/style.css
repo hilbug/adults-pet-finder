@@ -38,11 +38,6 @@ body {
     0 / 15px 15px;
 }
 
-#container {
-  width: 500px;
-  margin: auto;
-}
-
 p.title,
 p.welcome {
   text-align: center;
@@ -121,13 +116,6 @@ div.underage {
   text-align: center;
 }
 
-h4.header {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 0em;
-  margin-bottom: 2rem;
-}
-
 /* embedded video stylings /courtesy of/ https://embedresponsively.com/ */
 div.embed-container {
   position: relative;
@@ -189,7 +177,7 @@ input.btn {
 
 /* card styling */
 .card {
-  /* border: 2px solid#4195fc; */
+  border: 2px solid#ff1177;
   color: #ffffff;
   background-color: black;
   /* round the corners */
@@ -202,21 +190,33 @@ input.btn {
           box-shadow: 0px 0px 4px #4195fc; */
 }
 
-/* to hide search */
+/* to hide search container*/
 #searchcontainer {
   color: #ffffff;
   display: block;
 }
 
-/* to hide result */
+/* pet results card styling */
+/* to hide result container */
 #result {
   display: block;
 }
-
+/* name of pet */
+#name {
+  font-size: 30px;
+  line-height: 40px;
+}
 /* pet image size */
 #pet-image {
   max-width: 500px;
 }
+/* pet result font displays */
+.resultDisplay {
+  display: table;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+} /* end pet results card styling */
 
 /* responsive stylings */
 @media (max-width: 600px) {
