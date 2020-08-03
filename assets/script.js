@@ -95,19 +95,19 @@ $(document).ready(function () {
 
     // Random Likes Generator
     // Likes Array
-    let likes=["Long walks on the beach","Humping the couch","Sniffing butts","Tall blonds","Brunettes","Dungeons and Dragons","Harry Potter (only the books)","Dinner and a movie","Thic beaches","Belly rubs","the red fire hydrant on the corner of Main and Broadway","rolling in the dirt","rolling with my homies","burying myself in the snow","campfires","snuggling under the covers","getting into the trash can","skinny dipping","live music","traveling by train","howling at the moon","sticking my head out the car window","conquering the world","gazing at the stars","gardening","horror flicks","chick flicks","bar hopping","checking out microbreweries","road trips","heading to the coast on the weekends","a round of golf","going to the dentist","netflixing and chilling","living on the edge","hanging out on the roof","impromptu music sesh - acoustic guitars only","peanut butter jelly time","brushing and flossing...my teeth","drag racing down Main Street","paris on the weekends","seeing London and France","pinching pennies","chillin like a villain","finding a good vegan restaurant","practicing my down dog","roaming Central Park in the spring","running on Dunkin","lazing on my unicorn float","lounging by the pool","chasing pigeons"];
+    let likes=["Long walks on the beach","Humping the couch","Sniffing butts","Tall blondes","Brunettes","Dungeons and Dragons","Harry Potter (only the books)","Dinner and a movie","Thic beaches","Belly rubs","the red fire hydrant on the corner of Main and Broadway","rolling in the dirt","rolling with my homies","burying myself in the snow","campfires","snuggling under the covers","getting into the trash can","skinny dipping","live music","traveling by train","howling at the moon","sticking my head out the car window","conquering the world","gazing at the stars","gardening","horror flicks","chick flicks","bar hopping","checking out microbreweries","road trips","heading to the coast on the weekends","a round of golf","going to the dentist","netflixing and chilling","living on the edge","hanging out on the roof","impromptu music sesh - acoustic guitars only","peanut butter jelly time","brushing and flossing...my teeth","drag racing down Main Street","paris on the weekends","seeing London and France","pinching pennies","chillin like a villain","finding a good vegan restaurant","practicing my down dog","roaming Central Park in the spring","running on Dunkin","lazing on my unicorn float","lounging by the pool","chasing pigeons"];
     // Pick Random Like
     let randomLike = likes[Math.floor(Math.random() * likes.length)];
     
     // Text mappings
     // Map name and sex to #name-text
-    petName.text = `${randomFirstName} ${randomLastName}, ${sexOption}`;
-    // Map breed to #breed-text
-    petBreed.text(breedDropdown.val());
-    // Map to likes to #mood-text
-    petLikes.text = randomLike;
-    // Map to #houseTrained-text
-    houseTrain.text = houseTrainedOption;
+    petName.text(`${randomFirstName} ${randomLastName}, ${sexOption}`);
+    // Map breed to #breed-text - upper case first letter
+    petBreed.text(breedDropdown.val().substr(0,1).toUpperCase()+breedDropdown.val().substr(1));
+    // Map to #houseTrained-text - upper case first letter
+    houseTrain.text(houseTrainedOption.substr(0,1).toUpperCase()+houseTrainedOption.substr(1));
+    // Map to likes to #mood-text - upper case first letter
+    petLikes.text(randomLike.substr(0,1).toUpperCase()+randomLike.substr(1));
     
 
     // Console logs because it's not mapping to the page...
