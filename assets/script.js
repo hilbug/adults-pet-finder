@@ -88,7 +88,7 @@ $(document).ready(function () {
     let randomLastName = lastName[Math.floor(Math.random() * lastName.length)];
 
     // Random sex if needed
-    let sexOptions = ["male", "female"];
+    let sexOptions = ["male", "female", "non-binary/genderfluid"];
     let randomSexOption = sexOptions[Math.floor(Math.random() * sexOptions.length)];
     // Get Sex selection
     let sexOption = (sexDropdown.val() === "surprise") ? randomSexOption : sexDropdown.val();
