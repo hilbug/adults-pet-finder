@@ -70,9 +70,9 @@
                                     <!-- determines male or female pet -->
                                     <select id="sex">
                                         <option value="" disabled selected>Preference</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Surprise</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="surprise">Surprise</option>
                                     </select>
                                     <!-- end sex input -->
                                 </div>
@@ -84,9 +84,9 @@
                                     <!-- determines if pet needs to be house trained -->
                                     <select id="houseTrained">
                                         <option value="" disabled selected>Preference</option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
-                                        <option value="3">Surprise</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                        <option value="surprise">Surprise</option>
                                     </select>
                                     <!-- end house trained input -->
                                 </div>
@@ -134,7 +134,7 @@
         <div class="card-panel hoverable">
             <div class="row">
                 <div class="col s12 m7 l10 offset-m3">
-                    <h3 class="header">Meet <span id="name" class="nameDisplay">Name, sex</span></h3>
+                    <h3 id="name-text" class="header">Meet Name, sex</h3>
                     <!-- <div class="card horizontal"> -->
                     <div class="card">
                         <div class="card-image">
@@ -143,11 +143,10 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <span id="breed" class="resultDisplay">Breed:</span>
-                                <span id="houseTrained" class="resultDisplay">House Trained:</span>
+                                <span class="resultDisplay">Breed: </span><p id="breed-text">Test</p>
+                                <span class="resultDisplay">House Trained: </span><p id="house-trained-text">Test</p>
                                 <!-- comedic likes based on users mood-->
-                                <span id="mood" class="resultDisplay">Likes:</span>
-                                <p>This is where comedic pet Likes based on the user's mood.</p>
+                                <span class="resultDisplay">Likes: </span><p id="mood-text">Test</p>
                             </div>
                             <!-- link to petfinder -->
                             <div class="card-action">
