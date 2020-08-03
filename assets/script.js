@@ -32,10 +32,19 @@ $(document).ready(function () {
       petImage.attr("src", response.message);
     });
   }
-
+  // API call to get the goat picture
   function goatPicture() {
     $.ajax({
       url: "http://placegoat.com",
+      method: "GET",
+    }).then(function (response) {
+      petImage.attr("src", response.message);
+    });
+  }
+  // API call to get the fox picture
+  function goatPicture() {
+    $.ajax({
+      url: "https://randomfox.ca/?i=69",
       method: "GET",
     }).then(function (response) {
       petImage.attr("src", response.message);
