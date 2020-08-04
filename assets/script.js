@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var yesEighteen = document.querySelector("#yesEighteen");
-    var noEighteen = document.querySelector("#noEighteen");
-    var yesAnimal = document.querySelector("#yesAnimal");
+    var yesEighteen = document.querySelector(".age-yes");
+    var noEighteen = document.querySelector(".age-no");
+    var yesAnimal = document.querySelector(".animal-yes");
     var iAmEighteen = false;
     var iLikeAnimals = false;
 
