@@ -57,7 +57,6 @@ $(document).ready(function () {
 
   // function to populate the picture based on breed selection
   function setPicture() {
-    console.log(breedDropdown.val());
 
     if (breedDropdown.val() === "cat") {
       catPicture();
@@ -72,6 +71,7 @@ $(document).ready(function () {
     }
 
     else if (breedDropdown.val() === "goat") {
+      // this link auto-selects a picture
       petImage.attr("src", "https://placegoat.com/200");
     }
   }
@@ -95,8 +95,8 @@ $(document).ready(function () {
     // Random house-trained if needed
     let houseTrained = ["Yes", "No"];
     let randomHouseTrained = houseTrained[Math.floor(Math.random() * houseTrained.length)];
-    // Get house-trained selection
-    let houseTrainedOption = (houseTrainDropdown.val() === "surprise") ? randomHouseTrained : houseTrainDropdown.val();
+    // Get house-trained selection - random; otherwise val if "wet" then map no for housetrained if not wet then map yes for housetrained
+    let houseTrainedOption = (houseTrainDropdown.val() === "surprise") ? randomHouseTrained : (houseTrainDropdown.val() === "yes" ? "no" : "yes");
 
     // Random Likes Generator
     // Likes Array
@@ -104,7 +104,9 @@ $(document).ready(function () {
     // Pick Random Like
     let randomLike = likes[Math.floor(Math.random() * likes.length)];
 
-    // Text mappings
+    // Text mappings & Picture
+    // Set picture
+    setPicture();
     // Map name and sex to #name-text
     petName.text(`${randomFirstName} ${randomLastName}, ${sexOption}`);
     // Map breed to #breed-text - upper case first letter
@@ -118,9 +120,8 @@ $(document).ready(function () {
   // listen for search click to populate the picture?
   $(".btn").on("click", function (event) {
     event.preventDefault();
-    setPicture();
+    // generate pet profile
     generatePetDetails();
-    console.log(event);
     // hide search
     $('#searchcontainer').hide();
     // shows result
