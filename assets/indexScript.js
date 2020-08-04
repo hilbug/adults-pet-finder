@@ -6,6 +6,7 @@ $(document).ready(function () {
     var iAmEighteen = false;
     var iLikeAnimals = false;
 
+    // scroll reveal stylings
     var slideUp = {
         distance: '150%',
         origin: 'bottom',
