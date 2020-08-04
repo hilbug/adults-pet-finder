@@ -321,15 +321,6 @@ $(document).ready(function () {
     petLikes.text(randomLike.substr(0, 1).toUpperCase() + randomLike.substr(1));
   }
 
-  // scroll reveal stylings
-  var slideUp = {
-    distance: "150%",
-    origin: "bottom",
-    opacity: null,
-  };
-
-  ScrollReveal().reveal(".card", slideUp);
-
   // listen for search click to populate the picture?
   $(".btn").on("click", function (event) {
     event.preventDefault();
