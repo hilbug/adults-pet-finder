@@ -1,3 +1,11 @@
+/* index title stylings */
+p.welcome {
+  font-family: "Yellowtail", cursive;
+}
+p.title {
+  font-family: "Monoton", cursive;
+}
+
 /* nav stylings */
 nav {
   font-weight: 600;
@@ -27,7 +35,6 @@ div.search-nav {
 
 /* Neon Stylings / (https://codepen.io/FelixRilling/pen/qzfoc) */
 body {
-  font-family: "Quicksand", sans-serif;
   background-color: #222222;
   background: repeating-linear-gradient(
       45deg,
@@ -37,6 +44,11 @@ body {
       #222222 50%
     )
     0 / 15px 15px;
+}
+
+body.underage,
+body.search  {
+  font-family: "Quicksand", sans-serif;
 }
 
 p.title,
@@ -67,20 +79,19 @@ p:nth-child(1) a,
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
-
-p:nth-child(1) a {
-  font-family: "Yellowtail", cursive;
-}
-
-p:nth-child(2) a {
-  font-family: "Monoton", cursive;
-} /* end neon styling*/
+ /* end neon styling*/
 
 /* intro subtitle */
 h5.subtitle {
+  font-family: "Quicksand", sans-serif;
   color: whitesmoke;
   font-weight: 600;
   text-align: center;
+}
+
+/* intro card titles */
+h5.title {
+  padding-bottom: 2rem;
 }
 
 /* flexing */
@@ -93,16 +104,17 @@ div.container-age {
 /* intro card formatting */
 div.cardcontent-age,
 div.cardcontent-animal {
+  font-family: "Quicksand", sans-serif;
   text-align: center;
-  width: 300px;
+  width: auto;
 }
 
-/* into page/index.html animal card */
+/* intro page/index.html animal card */
 div.cardcontent-animal {
   order: 2;
 }
 
-/* into page/index.html age card */
+/* intro page/index.html age card */
 div.cardcontent-age {
   order: 1;
 }
@@ -189,7 +201,7 @@ a.animal-yes {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
- }
+}
 /* pet result title font displays */
 .resultDisplay {
   line-height: 30px;
@@ -199,7 +211,7 @@ a.animal-yes {
   display: block;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 /* pet result response display */
 #breed-text,
 #house-trained-text,
@@ -220,12 +232,16 @@ a.animal-yes {
   margin-right: auto;
   color: #ff1177;
   font-size: 30px;
-}/* end pet results card styling */
+} /* end pet results card styling */
 
 /* responsive stylings */
 @media (max-width: 600px) {
   nav {
     height: 100px;
+    text-align: center;
+  }
+  p.title {
+    font-size: 2rem;
   }
   div.card-age,
   div.card-animal {
@@ -234,12 +250,12 @@ a.animal-yes {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   p.welcome {
     font-size: 2rem;
   }
   p.title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   div.container-age {
     flex-wrap: wrap;
