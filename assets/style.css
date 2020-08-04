@@ -110,6 +110,11 @@ div.input-field {
   font-weight: 600;
   padding-bottom: 1.5rem;
 }
+/* Makes both yes buttons on intro page turn blue when clicked */
+
+.true{
+  background-color: blue;
+}
 
 /* Underage Stylings */
 div.underage {
