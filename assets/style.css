@@ -8,6 +8,7 @@ nav {
   background-color: #ff1177;
 }
 
+/* nav bar adults only petfinder logo */
 a.brand-logo {
   font-weight: 200;
   font-family: "Yellowtail", cursive;
@@ -73,11 +74,7 @@ p:nth-child(1) a {
 
 p:nth-child(2) a {
   font-family: "Monoton", cursive;
-}
-
-p a:hover {
-  color: #ffffff;
-}
+} /* end neon styling*/
 
 /* intro subtitle */
 h5.subtitle {
@@ -100,21 +97,17 @@ div.cardcontent-animal {
   width: 300px;
 }
 
+/* into page/index.html animal card */
 div.cardcontent-animal {
   order: 2;
 }
 
+/* into page/index.html age card */
 div.cardcontent-age {
   order: 1;
 }
 
-div.input-field {
-  color: #222222;
-  font-weight: 600;
-  padding-bottom: 1.5rem;
-}
-
-/* Underage Stylings */
+/* Under18.html styling*/
 div.underage {
   text-align: center;
 }
@@ -136,25 +129,12 @@ div.embed-container {
   width: 100%;
   height: 100%;
 }
+
+/* under18.html link buttons */
 .underage-btns {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* button stylings */
-.btn {
-  font-weight: 600;
-  font-size: large;
-  background-color: #ff1177;
-}
-
-a.age-yes,
-a.animal-yes {
-  margin-right: 1.5rem;
-}
-
-input.btn {
   margin-top: 2rem;
 }
 
@@ -162,20 +142,20 @@ input.btn {
   width: fit-content;
   background-color: #ff1177;
   margin-top: 2rem;
+  font-weight: 600;
+  font-size: large;
 }
 
-/* pet result name: */
-#name {
-  font-size: 30px;
-  line-height: 40px;
+.btn {
+  font-weight: 600;
+  font-size: large;
+  background-color: #ff1177;
 }
 
-/* pet result: */
-.resultDisplay {
-  display: table;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 20px;
+/* index.html age and animal yes button style? */
+a.age-yes,
+a.animal-yes {
+  margin-right: 1.5rem;
 }
 
 /* card styling */
@@ -183,14 +163,6 @@ input.btn {
   border: 2px solid#ff1177;
   color: #ffffff;
   background-color: black;
-  /* round the corners */
-  /* -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  /* make it glow! */
-  /* -webkit-box-shadow: 0px 0px 4px #4195fc;
-     -moz-box-shadow: 0px 0px 4px #4195fc;
-          box-shadow: 0px 0px 4px #4195fc; */
 }
 
 /* to hide search container*/
@@ -204,29 +176,51 @@ input.btn {
 #result {
   display: block;
 }
-
 /* name of pet */
 #name-text {
+  font-size: 30px;
   line-height: 40px;
   text-align: center;
 }
-
-div.card-image {
-  display: flex;
-  justify-content: center;
-}
-
 /* pet image size */
 #pet-image {
   max-width: 500px;
-}
-/* pet result font displays */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+ }
+/* pet result title font displays */
 .resultDisplay {
-  display: table;
   line-height: 30px;
   font-weight: bold;
   font-size: 20px;
-} /* end pet results card styling */
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+/* pet result response display */
+#breed-text,
+#house-trained-text,
+#mood-text {
+  line-height: 30px;
+  font-size: 20px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* link to petfinder "Meet Me!" */
+#petfinder-link {
+  text-align: center;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ff1177;
+  font-size: 30px;
+}/* end pet results card styling */
 
 /* responsive stylings */
 @media (max-width: 600px) {
