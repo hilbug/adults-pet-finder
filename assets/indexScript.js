@@ -5,6 +5,15 @@ $(document).ready(function () {
     var yesAnimal = document.querySelector("a.animal-yes");
     var iAmEighteen = false;
     var iLikeAnimals = false;
+
+    // scroll reveal stylings
+    var slideUp = {
+        distance: '150%',
+        origin: 'bottom',
+        opacity: null
+    };
+    
+    ScrollReveal().reveal('.card', slideUp);
   
     yesEighteen.addEventListener("click", function () {
         iAmEighteen = true;
@@ -29,4 +38,6 @@ $(document).ready(function () {
             $(this).addClass("true");
         }
     });
+
+    
 });
