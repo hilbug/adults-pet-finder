@@ -52,8 +52,7 @@ p.welcome {
 }
 
 a,
-.btn,
-nav {
+#name-text {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -61,12 +60,16 @@ nav {
 }
 
 p:nth-child(2) a,
-p:nth-child(1) a {
+p:nth-child(1) a,
+#name-text {
   color: #fff;
-  font-family: "Yellowtail", cursive;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(1) a {
+  font-family: "Yellowtail", cursive;
 }
 
 p:nth-child(2) a {
@@ -160,14 +163,6 @@ a.animal-yes {
   border: 2px solid#ff1177;
   color: #ffffff;
   background-color: black;
-  /* round the corners */
-  /* -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  /* make it glow! */
-  /* -webkit-box-shadow: 0px 0px 4px #4195fc;
-     -moz-box-shadow: 0px 0px 4px #4195fc;
-          box-shadow: 0px 0px 4px #4195fc; */
 }
 
 /* to hide search container*/
@@ -190,9 +185,10 @@ a.animal-yes {
 /* pet image size */
 #pet-image {
   max-width: 500px;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
  }
 /* pet result title font displays */
 .resultDisplay {
@@ -215,6 +211,7 @@ a.animal-yes {
   margin-left: auto;
   margin-right: auto;
 }
+/* link to petfinder "Meet Me!" */
 #petfinder-link {
   text-align: center;
   max-width: 500px;
