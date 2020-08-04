@@ -51,8 +51,7 @@ p.welcome {
 }
 
 a,
-.btn,
-nav {
+#name-text {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -60,12 +59,16 @@ nav {
 }
 
 p:nth-child(2) a,
-p:nth-child(1) a {
+p:nth-child(1) a,
+#name-text {
   color: #fff;
-  font-family: "Yellowtail", cursive;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(1) a {
+  font-family: "Yellowtail", cursive;
 }
 
 p:nth-child(2) a {
@@ -201,11 +204,18 @@ input.btn {
 #result {
   display: block;
 }
+
 /* name of pet */
-#name {
-  font-size: 30px;
+#name-text {
   line-height: 40px;
+  text-align: center;
 }
+
+div.card-image {
+  display: flex;
+  justify-content: center;
+}
+
 /* pet image size */
 #pet-image {
   max-width: 500px;
