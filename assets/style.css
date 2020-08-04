@@ -47,7 +47,7 @@ body {
 }
 
 body.underage,
-body.search  {
+body.search {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -79,7 +79,7 @@ p:nth-child(1) a,
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
- /* end neon styling*/
+/* end neon styling*/
 
 /* intro subtitle */
 h5.subtitle {
@@ -152,10 +152,13 @@ div.embed-container {
 
 .btn-large {
   width: fit-content;
-  background-color: #ff1177;
-  margin-top: 2rem;
+  height: auto !important;
   font-weight: 600;
   font-size: large;
+  line-height: normal;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #ff1177;
 }
 
 .btn {
