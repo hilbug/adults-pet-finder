@@ -33,7 +33,6 @@ div.search-nav {
   padding-left: 3rem;
 }
 
-/* Neon Stylings / (https://codepen.io/FelixRilling/pen/qzfoc) */
 body {
   background-color: #222222;
   background: repeating-linear-gradient(
@@ -63,6 +62,7 @@ p.welcome {
   margin-top: 20px;
 }
 
+/* Neon Stylings / (https://codepen.io/FelixRilling/pen/qzfoc) */
 a,
 #name-text {
   text-decoration: none;
