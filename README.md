@@ -94,11 +94,6 @@ For the first project for the Unh Programming Boot Camp our team was required to
 
 - Google Fonts
 
-  
-
-[Back To The Top](#)
-
-  
 
 ## References
 
