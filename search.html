@@ -43,136 +43,138 @@
         </div>
     </nav>
     <!-- search container -->
-    <div class="container" id="searchcontainer">
-        <div class="row">
-            <div class="col s12 m8 offset-m2">
-                <div class="card hoverable">
-                    <div class="card-content">
-                        <!--Neon Title -->
-                        <div class="container container-title">
-                            <div class="title">
-                                <p class="welcome"><a href="#">
-                                        Find your new furry friend!
-                                    </a></p>
-                            </div>
-                        </div>
-                        <form>
-                            <!-- users mood -->
-                            <div class="row">
-                                <div class="input-field col s12 white-text">What is Your Mood?
-                                    <!-- determines comedic characteristics -->
-                                    <select id="mood">
-                                        <option value="" disabled selected>Select Mood</option>
-                                        <option value="1">Lonely</option>
-                                        <option value="2">Excited</option>
-                                        <option value="3">Frisky</option>
-                                        <option value="3">Risky</option>
-                                    </select>
-                                    <!-- end mood input -->
-                                </div>
-                                <!-- end mood row -->
-                            </div>
-                            <!-- Users Sexual preference -->
-                            <div class="row">
-                                <div class="input-field col s12 white-text">Sex?
-                                    <!-- determines male or female pet -->
-                                    <select id="sex">
-                                        <option value="" disabled selected>Preference</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="non-binary">Non-binary/genderfluid</option>
-                                        <option value="surprise">Surprise</option>
-                                    </select>
-                                    <!-- end sex input -->
-                                </div>
-                                <!-- end sex row -->
-                            </div>
-                            <!-- Users preference if pet is house trained-->
-                            <div class="row">
-                                <div class="input-field col s12 white-text">Do you like it wet?
-                                    <!-- determines if pet needs to be house trained -->
-                                    <select id="houseTrained">
-                                        <option value="" disabled selected>Preference</option>
-                                        <option value="yes">Yes</option>
-                                        <option value="no">No</option>
-                                        <option value="surprise">Surprise</option>
-                                    </select>
-                                    <!-- end house trained input -->
-                                </div>
-                                <!-- end house trained row -->
-                            </div>
-                            <!-- Users preference on breed of pet-->
-                            <div class="row">
-                                <div class="input-field col s12 white-text">How much can you handle?
-                                    <!-- determines if pet needs to be house trained -->
-                                    <select id="breed">
-                                        <option value="" disabled selected>Preference</option>
-                                        <!-- cat -->
-                                        <option value="cat">Small</option>
-                                        <!-- fox -->
-                                        <option value="fox">Medium</option>
-                                        <!-- dog -->
-                                        <option value="dog">Large</option>
-                                        <!-- goat: according to google Adult Goat Height: 16 – 23 in. (Adult, At Shoulder)-->
-                                        <option value="goat">16 – 23 in.</option>
-                                        <!-- end pet size input -->
-                                    </select>
-                                </div>
-                                <!-- end breed row -->
-                            </div>
-                            <!-- search submit button -->
-                            <div class="row center">
-                                <button class="btn searchBtn" type="button" name="action">Search
-                                </button>
-                            </div>
-                            <!-- end search input form -->
-                        </form>
-                        <!-- end search card content -->
-                    </div>
-                    <!-- end search card -->
-                </div>
-                <!-- end search container col -->
-            </div>
-            <!-- end search container row -->
-        </div>
-        <!-- end search container -->
-    </div>
-
-    <!-- Results -->
-    <div class="container" id="result">
-        <div class="row">
-            <div class="col s12 m7 l10 offset-l1 offset-m2">
-                <!-- <div class="card horizontal"> -->
-                <div class="card hoverable">
-                    <h3 id="name-text" class="header">Meet Name, sex</h3>
-                    <div class="card-image">
-                        <img id="pet-image" src="">
-                    </div>
-                    <div class="card-stacked">
+    <div class="content">
+        <div class="container" id="searchcontainer">
+            <div class="row">
+                <div class="col s12 m8 offset-m2">
+                    <div class="card hoverable">
                         <div class="card-content">
-                            <span class="resultDisplay">Breed: </span>
-                            <p id="breed-text"></p>
-                            <span class="resultDisplay">House Trained: </span>
-                            <p id="house-trained-text"></p>
-                            <!-- comedic likes based on users mood-->
-                            <span class="resultDisplay">Likes: </span>
-                            <p id="mood-text"></p>
+                            <!--Neon Title -->
+                            <div class="container container-title">
+                                <div class="title">
+                                    <p class="welcome"><a href="#">
+                                            Find your new furry friend!
+                                        </a></p>
+                                </div>
+                            </div>
+                            <form>
+                                <!-- users mood -->
+                                <div class="row">
+                                    <div class="input-field col s12 white-text">What is Your Mood?
+                                        <!-- determines comedic characteristics -->
+                                        <select id="mood">
+                                            <option value="" disabled selected>Select Mood</option>
+                                            <option value="1">Lonely</option>
+                                            <option value="2">Excited</option>
+                                            <option value="3">Frisky</option>
+                                            <option value="3">Risky</option>
+                                        </select>
+                                        <!-- end mood input -->
+                                    </div>
+                                    <!-- end mood row -->
+                                </div>
+                                <!-- Users Sexual preference -->
+                                <div class="row">
+                                    <div class="input-field col s12 white-text">Sex?
+                                        <!-- determines male or female pet -->
+                                        <select id="sex">
+                                            <option value="" disabled selected>Preference</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="non-binary">Non-binary/genderfluid</option>
+                                            <option value="surprise">Surprise</option>
+                                        </select>
+                                        <!-- end sex input -->
+                                    </div>
+                                    <!-- end sex row -->
+                                </div>
+                                <!-- Users preference if pet is house trained-->
+                                <div class="row">
+                                    <div class="input-field col s12 white-text">Do you like it wet?
+                                        <!-- determines if pet needs to be house trained -->
+                                        <select id="houseTrained">
+                                            <option value="" disabled selected>Preference</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            <option value="surprise">Surprise</option>
+                                        </select>
+                                        <!-- end house trained input -->
+                                    </div>
+                                    <!-- end house trained row -->
+                                </div>
+                                <!-- Users preference on breed of pet-->
+                                <div class="row">
+                                    <div class="input-field col s12 white-text">How much can you handle?
+                                        <!-- determines if pet needs to be house trained -->
+                                        <select id="breed">
+                                            <option value="" disabled selected>Preference</option>
+                                            <!-- cat -->
+                                            <option value="cat">Small</option>
+                                            <!-- fox -->
+                                            <option value="fox">Medium</option>
+                                            <!-- dog -->
+                                            <option value="dog">Large</option>
+                                            <!-- goat: according to google Adult Goat Height: 16 – 23 in. (Adult, At Shoulder)-->
+                                            <option value="goat">16 – 23 in.</option>
+                                            <!-- end pet size input -->
+                                        </select>
+                                    </div>
+                                    <!-- end breed row -->
+                                </div>
+                                <!-- search submit button -->
+                                <div class="row center">
+                                    <button class="btn searchBtn" type="button" name="action">Search
+                                    </button>
+                                </div>
+                                <!-- end search input form -->
+                            </form>
+                            <!-- end search card content -->
                         </div>
-                        <!-- link to petfinder -->
-                        <div class="card-action">
-                            <a id="petfinder-link" href="https://www.petfinder.com/">Meet Me!</a>
-                        </div>
-                        <!-- end result card stacked -->
+                        <!-- end search card -->
                     </div>
-                    <!-- end result card horizontal -->
+                    <!-- end search container col -->
                 </div>
-                <!-- end result col -->
+                <!-- end search container row -->
             </div>
-            <!-- end result row -->
+            <!-- end search container -->
         </div>
-        <!-- end result card panel hoverable -->
-    </div>
-    <!-- end result container -->
+
+
+        <!-- Results -->
+        <div class="container" id="result">
+            <div class="row">
+                <div class="col s12 m7 l10 offset-l1 offset-m2">
+                    <!-- <div class="card horizontal"> -->
+                    <div class="card hoverable">
+                        <h3 id="name-text" class="header">Meet Name, sex</h3>
+                        <div class="card-image">
+                            <img id="pet-image" src="">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="resultDisplay">Breed: </span>
+                                <p id="breed-text"></p>
+                                <span class="resultDisplay">House Trained: </span>
+                                <p id="house-trained-text"></p>
+                                <!-- comedic likes based on users mood-->
+                                <span class="resultDisplay">Likes: </span>
+                                <p id="mood-text"></p>
+                            </div>
+                            <!-- link to petfinder -->
+                            <div class="card-action">
+                                <a id="petfinder-link" href="https://www.petfinder.com/">Meet Me!</a>
+                            </div>
+                            <!-- end result card stacked -->
+                        </div>
+                        <!-- end result card horizontal -->
+                    </div>
+                    <!-- end result col -->
+                </div>
+                <!-- end result row -->
+            </div>
+            <!-- end result card panel hoverable -->
+        </div>
+        <!-- end result container -->
     </div>
     <!-- footer -->
     <footer class="page-footer grey darken-3">
