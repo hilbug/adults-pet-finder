@@ -1,5 +1,5 @@
-// set variables
 $(document).ready(function () {
+    // set variables
     var yesEighteen = document.querySelector("a.age-yes");
     var noEighteen = document.querySelector("a.age-no");
     var yesAnimal = document.querySelector("a.animal-yes");
