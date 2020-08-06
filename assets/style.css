@@ -168,9 +168,14 @@ div.embed-container {
 }
 
 /* index.html age and animal yes button style */
-a.age-yes,
-a.animal-yes {
+.age-yes,
+.animal-yes {
   margin-right: 1.5rem;
+}
+
+/* yes or no buttons selected on index.html page */
+button:focus { 
+  background-color: #4DB6AC
 }
 
 /* card styling */
