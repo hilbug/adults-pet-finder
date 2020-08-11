@@ -113,7 +113,7 @@ h5.title {
 /* flexing */
 div.container-age {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
 }
 
