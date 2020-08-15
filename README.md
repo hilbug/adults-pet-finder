@@ -103,7 +103,7 @@ As an animal and comedy lover, I want a pet so that I am not lonely.
 - [w3schools.com](https://www.w3schools.com/js/js_ajax_intro.asp)
 
 ## License
-- This project is licensed under the terms of the MIT license."
+- This project is licensed under the terms of the MIT license.
   ---
 
 [Back To The Top](#)
