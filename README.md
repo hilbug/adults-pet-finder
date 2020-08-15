@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Adult Pet Finder Read me
 
 ![2020-08-05 (6)](https://user-images.githubusercontent.com/66302441/89474481-c4121c00-d753-11ea-99b4-96db7e83b8eb.png)
@@ -100,6 +102,8 @@ As an animal and comedy lover, I want a pet so that I am not lonely.
 - [Stackoverflow](https://stackoverflow.com/questions/28258106/materialize-css-select-doesnt-seem-to-render)
 - [w3schools.com](https://www.w3schools.com/js/js_ajax_intro.asp)
 
+## License
+- This project is licensed under the terms of the MIT license."
   ---
 
 [Back To The Top](#)
